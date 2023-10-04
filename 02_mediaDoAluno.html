@@ -8,15 +8,18 @@
 
 
     //ENTRADA
-    let quantidade = Number(prompt(`Quantas notas o aluno obteve durante o trimestre?`));
-    let soma = 0;
+    const numeroDeNotas = Number(prompt("Informe quantas notas o aluno obteve"));
+    let somaDasNotas = 0;
 
- 
     //PROCESSAMENTO
-    for (i = quantidade; i <= 1; quantidade--) {
-        let nota = Number(prompt(`Qual a nota? (faltam ${quantidade} nota(s)).`));
-        soma = soma + nota;
+    for (let i = 0; i < numeroDeNotas; i++) {
+        let nota = Number(prompt(`Informe a nota ${i + 1}`));
+        somaDasNotas += nota;
     }
-    document.write(`A média do aluno no período final foi de: ${(soma / quantidade).toFixed(1)}.`);
+
+    let media = somaDasNotas / numeroDeNotas;
+
+    //SAÍDA
+    document.write(`A média das notas é: ${media.toFixed(2)}`);
 
 </script>
