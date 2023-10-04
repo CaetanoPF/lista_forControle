@@ -6,12 +6,17 @@
     No final, apresente o maior número informado pelo usuário.
     */
 
+
+    //ENTRADA
     let numeros = []
-    for(i = 5; i>=1; i--){
-        numero = Number(prompt(`Informe o numero (${numeros} numeros restantes)`))
+
+
+    //PROCESSAMENTO
+    for (i = 5; i >= 1; i--) {
+        numero = Number(prompt(`Informe o número (${numeros} números restantes)`))
         numeros.push(numero)
     }
     let mn = Math.max(...numeros)
-    document.write(`O maior numero dentre os que você disse é o ${mn}`)
+    document.write(`O maior número dentre os que você informou é: ${mn}.`)
 
 </script>

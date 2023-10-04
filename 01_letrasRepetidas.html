@@ -9,11 +9,16 @@
     **Apresente apenas letras minúsculas!
     */
 
+
+    //ENTRADA
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     let reservadas = []
-    for (i = 0; i < listaDeLetras.length; i++){
+
+
+    //PROCESSAMENTO
+    for (i = 0; i < listaDeLetras.length; i++) {
         let letra = listaDeLetras[i].toLowerCase();
-        if(reservadas.includes(letra) == false){
+        if (reservadas.includes(letra) == false) {
             reservadas.push(letra)
         }
     }
